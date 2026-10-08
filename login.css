@@ -1,0 +1,23 @@
+<script>
+function validateForm() {
+var username=
+document.getElementById("username").value;
+
+var password=
+document.getElementBbyId("password").value;
+
+var validUsername="nick";
+var validPassword="Rheang";
+if (username ===  validUsername &&
+password === validPassword) {
+ 
+ window.location.href="homepage.html";
+ return false;
+ } else{
+ alert("Invalid username or password");
+ return false;
+ }
+ }
+ </script>
+ </body>
+ </html>

@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Login Form</title>
+</head>
+<body>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    background: skyblue;
+    padding: 40px;
+    border-radius: 12px;
+    width: 200%;
+	height: 40vh;
+    max-width: 400px;
+}
+
+.subtitle {
+	display: block;
+    color: #666;
+    font-size: 35px;
+    margin-bottom: 24px;
+	
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 22px;
+    color: #444;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.submit-btn {
+    width: 100%;
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background: #556cd6;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 13px;
+    margin-top: 12px;
+    text-align: center;
+}
+.background-video{
+	position: fixed;
+	height: 100vh;
+	width: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+
+
+</style>
+
+    <div class="login-container">
+        <form onsubmit="validateForm()">
+            <p class="subtitle"> Sign Up!</p>
+
+            <div class="input-group">
+                <label for="Username">Username</label>
+                <input type="text" id="username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+				<input type="submit" value="login">
+            </div>
+
+           
+        </form>
+    </div>
+	<video autoplay muted loop class="background-video">
+		<source src="background.mp4" type="video/mp4">
+		</video>
+
+		<script>
+		function validateForm(){
+		event.preventDefault();
+		const username = document.getElementById("username").value;
+		const password = document.getElementById("password").value;
+		if(username === "Colance"&&password === "12345"){
+		window.location.href="homepage.html";
+		return false;
+		}
+		else{
+		alert("invalid usrname or password");
+		return false;
+		}
+		}
+		</script>
+ 
+</body>
+</html>
+

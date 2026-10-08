@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gaming Phone Shop</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        /* NAVIGATION BAR */
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 80px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 0 80px;
+
+            background: rgba(0, 0, 0, 0.70);
+
+            z-index: 2;
+        }
+
+        /* SHOP NAME */
+
+        .logo {
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            color: #00e5ff;
+        }
+
+        /* MENU */
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+
+            font-size: 17px;
+
+            padding: 8px 12px;
+
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00e5ff;
+            border-bottom: 2px solid #00e5ff;
+        }
+
+
+        /* BACKGROUND VIDEO */
+
+        .background-video {
+
+            position: fixed;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+            z-index: -1;
+        }
+
+
+        /* DARK OVERLAY */
+
+        .overlay {
+
+            position: fixed;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+
+            background: rgba(0, 0, 0, 0.45);
+
+            z-index: 0;
+        }
+
+
+        /* MAIN CONTENT */
+
+        .main {
+
+            position: relative;
+
+            z-index: 1;
+
+            height: 100vh;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            align-items: center;
+
+            text-align: center;
+
+            color: white;
+
+            padding: 20px;
+        }
+
+
+        /* TITLE */
+
+        h1 {
+
+            font-size: 70px;
+
+            letter-spacing: 3px;
+
+            text-shadow:
+
+                0 0 10px #00e5ff,
+
+                0 0 20px #00e5ff,
+
+                0 0 40px #00e5ff;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        h1 span {
+
+            color: #00e5ff;
+
+        }
+
+
+        /* SUBTITLE */
+
+        .subtitle {
+
+            font-size: 22px;
+
+            margin-bottom: 30px;
+
+            max-width: 650px;
+
+            line-height: 1.6;
+
+        }
+
+
+        /* BUTTON */
+
+        .shop-btn {
+
+            padding: 15px 35px;
+
+            background: #00e5ff;
+
+            color: black;
+
+            text-decoration: none;
+
+            font-size: 18px;
+
+            font-weight: bold;
+
+            border-radius: 30px;
+
+            transition: 0.3s;
+
+            box-shadow:
+
+                0 0 10px #00e5ff,
+
+                0 0 25px #00e5ff;
+
+        }
+		.logo img{
+		width: 55px;
+		height: 55px;
+		object-fit: left;
+		display: block;
+		}
+
+
+        .shop-btn:hover {
+
+            transform: scale(1.1);
+
+            background: white;
+
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            nav {
+
+                padding: 0 20px;
+
+            }
+
+            .logo {
+display:flex;
+align-items: center;
+gap:10px;
+color:white;
+font-size: 28px;
+font-weight:bold;
+letter-spacing: 2px;
+                
+            }
+	.logo img{
+width:50px;
+height:50px;
+object-fit: contan;
+}
+.logo span{
+color:white;
+}
+
+        nav ul li {
+             margin-left: 5px;
+
+          }
+
+  nav ul li a {
+
+font-size: 14px;
+
+   }
+
+  h1 {
+
+    font-size: 45px;
+
+            }
+            .subtitle {
+
+                font-size: 17px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- BACKGROUND VIDEO -->
+
+    <video autoplay muted loop class="background-video">
+
+        <source src="background.mp4" type="video/mp4">
+
+    </video>
+
+
+    <!-- DARK EFFECT -->
+
+    <div class="overlay"></div>
+
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+     
+			
+
+        </div>
+		<div class="logo">
+		<img src="Logo.jpg" alt="GameZone Logo">
+		GAME<span>ZONE</span>
+		</div>
+
+
+        <ul>
+
+            <li>
+                <a href="homepage.html">Home</a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+
+            <li>
+                <a href="products.html">Products</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+ <li>
+                <a href="loginform.html" class="logout">Log out</a>
+            </li>
+        </ul>
+
+    </nav>
+
+
+    <!-- MAIN -->
+
+    <div class="main">
+
+        <h1>
+
+            LEVEL UP YOUR <span>GAME</span>
+
+        </h1>
+
+
+        <p class="subtitle">
+
+            Discover powerful gaming phones built for speed,
+            performance, and the ultimate mobile gaming experience.
+
+        </p>
+
+
+        
+
+            
+
+        </a>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+            min-height: 100vh;
+        }
+
+        nav {
+            background: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-size: 20px;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            color: #667eea;
+        }
+
+        .contact-container {
+            width: 90%;
+            max-width: 600px;
+            margin: 60px auto;
+            background: #222;
+            padding: 40px;
+            border-radius: 15px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        h1 span {
+            color: #667eea;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 7px;
+            font-size: 16px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        textarea {
+            height: 130px;
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #556cd6;
+        }
+
+        .info {
+            text-align: center;
+            margin-top: 30px;
+            line-height: 1.8;
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="homepage.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="contact-container">
+
+        <h1>Contact <span>Us</span></h1>
+
+        <form>
+
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Message</label>
+            <textarea placeholder="Enter your message"></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+        <div class="info">
+            <p>Email: Nicks@gmail.com</p>
+            <p>Phone: 09992231124</p>
+            <p>Location: Philippines</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
